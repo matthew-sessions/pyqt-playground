@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/bird.png</file>
+    <file>icons/menu-button-of-three-horizontal-lines.png</file>
+  </qresource>
+</RCC>

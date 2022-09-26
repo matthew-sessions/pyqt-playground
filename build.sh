@@ -1,0 +1,1 @@
+cxfreeze app/app.py
