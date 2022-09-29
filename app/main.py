@@ -1,7 +1,7 @@
 
 import sys
 import time
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QMainWindow
 from ui.ui_core_interface import Ui_MainWindow
 from video_controller.local_camera_thread import LocalCameraThread
 
