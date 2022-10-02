@@ -17,13 +17,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QMainWindow,
     QPushButton, QSizePolicy, QVBoxLayout, QWidget)
-import ui.resources_rc
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1274, 860)
+        MainWindow.resize(851, 768)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.functionalityContainer = QWidget(self.centralwidget)
@@ -93,7 +93,6 @@ class Ui_MainWindow(object):
         self.pushButton = QPushButton(self.widget_5)
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setGeometry(QRect(150, 220, 271, 91))
-        self.pushButton.setHidden(True)
 
         self.horizontalLayout_3.addWidget(self.widget_5)
 

@@ -13,6 +13,8 @@ class InternalAbstractVideoThread(QThread):
     
     def __init__(self, parent=None):
         QThread.__init__(self, parent)
+        self.c = 0
+        self.parent = parent
         
         self.status = True
         self.cap = True
@@ -20,7 +22,7 @@ class InternalAbstractVideoThread(QThread):
     def run(self) -> None:
         while self.status:
             display_frame = self.get_display_frame()
-            if display_frame:
+            if display_frame:     
                 self.updateFrame.emit(display_frame)
         sys.exit(-1)
 
